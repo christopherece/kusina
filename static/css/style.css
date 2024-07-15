@@ -26,6 +26,8 @@ a:hover, a:focus, a:active {
   color: #bf4c03;
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   color: #000;
@@ -306,7 +308,6 @@ p {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
 }
 .fh5co-main-nav .fh5co-menu-1 a:hover, .fh5co-main-nav .fh5co-menu-1 a:focus, .fh5co-main-nav .fh5co-menu-1 a:active,
 .fh5co-main-nav .fh5co-menu-2 a:hover,
