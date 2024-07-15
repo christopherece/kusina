@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kusina ni JEssa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A free responsive photography html website template by Frittt Templates">
+  <meta name="author" content="FritttTemplates">
+  
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="img/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="img/png" href="favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="img/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="img/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <meta name="msapplication-config" content="favicons/browserconfig.xml">
+  
+  <!-- CSS -->
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+  <link href="{% static 'css/icomoon.css' %}" rel="stylesheet">
+  <link href="{% static 'css/simple-line-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/flexslider.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <script src="js/modernizr-2.6.2.min.js"></script>
+
+
+
+ <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+
+</head> <!-- head -->
+<body>
+	
+	<!-- ============== start wrapper  ============== -->
+	<div id="wrapper">
+		<!-- main-nav -->
+		<div class="main-nav">
+			<div class="logo-left">
+				<a data-scroll href="#home">
+					<img src="{% static 'img/jimenezwhite.png' %}" alt="logo" width="250" height="65" style="margin-top: 15px;">
+				</a>
+			</div>
+			<div class="menu-button toggle-menu menu-right push-body">
+				<button><i class="fa fa-bars"></i></button>
+			</div>
+		</div> <!-- //end main-nav -->
+
+		<!--=========================
+			Start area for Menu 
+		============================== -->
+		{% include 'partials/_navbar.html' %}
+		
+		<!-- End of menu area -->
+
+        {% block content %}
+
+        {% endblock %}
+		
+		<!-- ============== Start footer ============== -->
+		{% include 'partials/_footer.html' %}
+		<!-- ========= //End footer ========= -->
+
+	</div> <!-- //end wrapper -->
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/moment.js' %}"></script>
+    <script src="{% static 'js/bootstrap-datetimepicker.min.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+    <script>
+      $(function () {
+           $('#date').datetimepicker();
+       });
+    </script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>
